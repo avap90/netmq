@@ -29,7 +29,7 @@ Example:
 
     :::csharp
     using (var responseSocket = new ResponseSocket("@tcp://*:5555"))
-    using (var requestSocket = new RequestSocket(">tcp://localhost:5555"))
+    using (var requestSocket = new RequestSocket("/&gt;tcp://localhost:5555"))
     {
         Console.WriteLine("requestSocket : Sending 'Hello'");
         requestSocket.SendFrame("Hello");
